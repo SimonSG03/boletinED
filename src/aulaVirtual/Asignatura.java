@@ -35,4 +35,15 @@ public class Asignatura {
             if (a.getNombre().equals(alumno.nombre)) alumnos.remove(a);
         }
     }
+    // Método para imprimir los datos de todos los alumnos
+    public void imprimirDatosAlumnos() {
+        if (alumnos.isEmpty()) {
+            System.out.println("No hay alumnos registrados.");
+            return;
+        }
+
+        for (Alumno alumno : alumnos) {
+            System.out.println("Nombre: " + alumno.getNombre());
+        }
+    }
 }
