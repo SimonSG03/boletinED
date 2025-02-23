@@ -7,7 +7,7 @@ import aulaVirtual.Profesor;
 public class Main {
     public static void main(String[] args) {
 
-        // Crear asignaturas
+        // Crear asignatura
         Asignatura matematicas = new Asignatura("Matemáticas");
         Asignatura programacion = new Asignatura("Programación");
 
@@ -29,7 +29,7 @@ public class Main {
         profesor1.calificarAlumno(alumno1, programacion, 90);
         profesor1.calificarAlumno(alumno2, programacion, 78);
 
-        // Mostrar notas de los alumnos
+        // Mostrar notas de los alumnos 1 y 2
         alumno1.mostrarNotas();
         alumno2.mostrarNotas();
     }
